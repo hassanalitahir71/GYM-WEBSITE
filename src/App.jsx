@@ -1,12 +1,13 @@
 
 import "./index.css";
-import HeroSection from "./components/HeroSection";
+import HomePage from "./Pages/HomePage";
+
 
 
 function App() {
   return (
     <>
-     <HeroSection/>
+     <HomePage/>
     </>
   );
 }
