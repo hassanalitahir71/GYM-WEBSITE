@@ -10,7 +10,7 @@ import Footer from "../components/Footer"
 export default function HomePage() {
   return (
     <div className="bg-black">
-      <HeroSection />
+      <HeroSection page="HomePage" />
       <AboutUs/>
       <Performance/>
       <OurServices />

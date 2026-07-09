@@ -1,5 +1,6 @@
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,10 +9,19 @@ export default function Footer() {
         {/* Navigation */}
         <nav className="w-full">
           <ul className="font-roboto flex w-full flex-wrap items-center justify-center gap-4 text-[20px] font-medium text-black/70 md:justify-between">
-            <li className="cursor-pointer hover:font-bold">Home</li>
-            <li className="cursor-pointer hover:font-bold">About</li>
-            <li className="cursor-pointer hover:font-bold"> Service </li>
-            <li className="cursor-pointer hover:font-bold">Membership</li>
+            <Link to="/" className="cursor-pointer hover:font-bold">
+              Home
+            </Link>
+            <Link to="AboutUs" className="cursor-pointer hover:font-bold">
+              About
+            </Link>
+            <a href="#" className="cursor-pointer hover:font-bold">
+              {" "}
+              Service{" "}
+            </a>
+            <a href="#" className="cursor-pointer hover:font-bold">
+              Membership
+            </a>
           </ul>
         </nav>
 
@@ -47,7 +57,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="w-full mt-16">
+      <div className="mt-16 w-full">
         <img src="img/IRON FORGE.png" alt="" className="w-full object-cover" />
       </div>
     </footer>

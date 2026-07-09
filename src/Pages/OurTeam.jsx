@@ -1,10 +1,14 @@
+import HeroSection from "../components/HeroSection"
 
 
 function OurTeam() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <div className=" bg-black">
+        <HeroSection page="OurTeam"/>
+
+      </div>
+    </>
   )
 }
 

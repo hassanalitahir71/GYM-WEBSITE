@@ -1,8 +1,11 @@
+import HeroSection from "../components/HeroSection"
 
 
 function AboutUs() {
   return (
-    <div>
+    <div className="bg-black">
+        <HeroSection page ="AboutUs" />
+
       
     </div>
   )
