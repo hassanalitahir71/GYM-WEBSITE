@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -17,30 +18,30 @@ const NavBar = () => {
           <div className="hidden rounded-full bg-gray-100/3 px-8 py-4 backdrop-blur-[12px] md:block">
             <ul className="font-mona flex items-center gap-10">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="hover:text-yellow text-white transition hover:font-semibold"
                 >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/AboutUs"
                   className="hover:text-yellow text-white transition hover:font-semibold"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#"
-                  className="hover:text-yellow text-white transition hover:font-semibold"
+                <Link
+                  to="/OurTeam"
+                  className="hover:text-yellow cursor-pointer text-white transition hover:font-semibold"
                 >
-                  Programs
-                </a>
+                  Our Team
+                </Link>
               </li>
 
               <li>
