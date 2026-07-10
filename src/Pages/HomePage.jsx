@@ -1,4 +1,4 @@
-import AboutUs from "../components/AboutUs"
+import Paragraph from "../components/Paragraph"
 import HeroSection from "../components/HeroSection"
 import Performance from "../components/Performance"
 import OurServices from "../components/OurServices"
@@ -11,11 +11,11 @@ export default function HomePage() {
   return (
     <div className="bg-black">
       <HeroSection page="HomePage" />
-      <AboutUs/>
+      <Paragraph HomePage={true}/>
       <Performance/>
       <OurServices />
       <MembershipPlans/>
-      <FreeSetion/>
+      <FreeSetion pic={false} color={true} />
       <Footer/>
 
     </div>

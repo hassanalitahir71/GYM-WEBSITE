@@ -1,7 +1,7 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-const FreeSession = () => {
+const FreeSession = ( {pic,color}) => {
   // Animation variants for the container to stagger its children
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -26,10 +26,26 @@ const FreeSession = () => {
   return (
     <div className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-black">
       {/* Background Image */}
-      <img
-        src="/img/booksetion.jpg"
-        alt="Workout Background"
-        className="absolute inset-0 h-full w-full object-cover opacity-40"
+
+      {pic ? (
+        <img
+          src="/img/freebg.jpg"
+          alt="Workout Background"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
+        />
+      ) : (
+        <img
+          src="/img/booksetion.jpg"
+          alt="Workout Background"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
+      <div
+        className={`pointer-events-none absolute inset-0 z-0 ${
+          color
+            ? "bg-black bg-gradient-to-b from-black via-transparent to-black opacity-30"
+            : "bg-gradient-to-b from-black/70 to- bg-yellow"
+        }`}
       />
 
       {/* Content Wrapper converted to motion.div */}
@@ -61,15 +77,31 @@ const FreeSession = () => {
         {/* CTA Button */}
         <motion.button
           variants={itemVariants}
-          className="group mt-10 flex cursor-pointer items-center gap-4 rounded-full bg-[#fdf001] py-2 pr-2 pl-8 transition-all duration-300 hover:bg-white hover:text-black"
+          className={`group mt-10 flex cursor-pointer items-center gap-4 rounded-full py-2 pr-2 pl-8 transition-all duration-300 ${
+            color
+              ? "bg-yellow text-black hover:bg-white hover:text-black "
+              : "text-yellow bg-black hover:text-white group-hover:bg-white"
+          }`}
         >
-          <span className="font-mona text-base font-semibold text-black transition-colors duration-300">
+          <span className="font-mona text-base font-semibold transition-colors duration-300">
             Book a Free Session
           </span>
 
           {/* Arrow Icon Circle */}
-          <div className="group-hover:bg-yellow flex h-10 w-10 items-center justify-center rounded-full bg-black transition-transform duration-300 group-hover:rotate-45">
-            <FiArrowUpRight className="text-xl font-bold text-white group-hover:text-black" />
+          <div
+            className={`flex h-10 w-10 items-center justify-center rounded-full transition-transform duration-300 group-hover:rotate-45 ${
+              color
+                ? "group-hover:bg-yellow bg-black"
+                : "bg-yellow group-hover:bg-white"
+            }`}
+          >
+            <FiArrowUpRight
+              className={`text-xl font-bold ${
+                color
+                  ? "text-white group-hover:text-black"
+                  : "text-black "
+              }`}
+            />
           </div>
         </motion.button>
       </motion.div>
