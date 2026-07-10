@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Pragraph({ HomePage, AboutUs }) {
   // homepage animation
-  // Container variant to handle cascading/staggering animations
+ 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,7 +36,7 @@ function Pragraph({ HomePage, AboutUs }) {
   // --- ABOUT US ANIMATIONS (New) ---
   // Heading scales up from 80% size and fades in
   const aboutHeadingVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
       scale: 1,
@@ -50,7 +50,7 @@ function Pragraph({ HomePage, AboutUs }) {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
 

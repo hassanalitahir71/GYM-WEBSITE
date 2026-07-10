@@ -4,7 +4,7 @@ import { IoCheckboxOutline } from "react-icons/io5";
 // 1. MOVED OUTSIDE: This fixes the React error!
 const CheckItem = ({ text }) => (
   <li className="flex items-start gap-4">
-    <div className="mt-1 flex items-center justify-center text-yellow-400">
+    <div className="mt-1 flex items-center justify-center text-yellow">
       <IoCheckboxOutline className="h-5 w-5" />
     </div>
     <span className="sm:text-md text-gray-300">{text}</span>
@@ -19,7 +19,7 @@ function VisionMissionSection() {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -28,7 +28,7 @@ function VisionMissionSection() {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -39,12 +39,12 @@ function VisionMissionSection() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
         {/* CENTER DASHED TIMELINE LINE (Hidden on mobile) */}
-        <div className="absolute top-0 bottom-0 left-1/2 hidden w-[1px] -translate-x-1/2 border-l border-dashed border-gray-600 md:block"></div>
+        <div className="absolute top-0 bottom-0 left-1/2 hidden w-[1px] -translate-x-1/2 border-l border-dashed border-white md:block"></div>
 
         {/* ROW 1: OUR VISION */}
         <div className="relative mb-24 grid grid-cols-1 items-center gap-12 md:mb-32 md:grid-cols-2 md:gap-24">
           {/* Timeline Diamond */}
-          <div className="absolute top-1/2 left-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-yellow-400 shadow-[0_0_15px_rgba(250,204,21,0.6)] md:block"></div>
+          <div className="absolute top-1/2 left-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-yellow shadow-[0_0_15px_rgba(250,204,21,0.6)] md:block"></div>
 
           {/* Left: Text Content */}
           <motion.div
@@ -105,7 +105,7 @@ function VisionMissionSection() {
         {/* ROW 2: OUR MISSION */}
         <div className="relative grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-24">
           {/* Timeline Diamond */}
-          <div className="absolute top-1/2 left-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-yellow-400 shadow-[0_0_15px_rgba(250,204,21,0.6)] md:block"></div>
+          <div className="absolute top-1/2 left-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-yellow shadow-[0_0_15px_rgba(250,204,21,0.6)] md:block"></div>
 
           {/* Left: Image Content */}
           <motion.div

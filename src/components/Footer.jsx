@@ -30,28 +30,28 @@ export default function Footer() {
           {/* Facebook */}
           <a
             href="#"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-white"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-yellow"
           >
             <IoLogoFacebook className="text-xl" />
           </a>
           {/* Twitter */}
           <a
             href="#"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-white"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-yellow"
           >
             <FaTwitter className="text-xl" />
           </a>
           {/* LinkedIn */}
           <a
             href="#"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-white"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-yellow"
           >
             <FaLinkedinIn className="text-xl" />
           </a>
           {/* Instagram */}
           <a
             href="#"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-white"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 transition-colors hover:bg-black hover:text-yellow"
           >
             <FaInstagram className="text-xl" />
           </a>
