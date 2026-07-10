@@ -182,7 +182,7 @@ function HeroSection( {page} ) {
                        {/* Stat Card 1 */}
                        <motion.div
                          variants={cardVariants}
-                         className="font-made flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow-400"
+                         className="font-made flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow"
                        >
                          <h3 className="mb-2 text-4xl font-bold text-white sm:text-5xl">
                            15+
@@ -195,7 +195,7 @@ function HeroSection( {page} ) {
                        {/* Stat Card 2 */}
                        <motion.div
                          variants={cardVariants}
-                         className="flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow-400"
+                         className="flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow"
                        >
                          <h3 className="mb-2 text-4xl font-bold text-white sm:text-5xl">
                            4K+
@@ -208,7 +208,7 @@ function HeroSection( {page} ) {
                        {/* Stat Card 3 */}
                        <motion.div
                          variants={cardVariants}
-                         className="flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow-400"
+                         className="flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow"
                        >
                          <h3 className="mb-2 text-4xl font-bold text-white sm:text-5xl">
                            80+
@@ -219,7 +219,7 @@ function HeroSection( {page} ) {
                        {/* Stat Card 4 */}
                        <motion.div
                          variants={cardVariants}
-                         className="flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow-400"
+                         className="flex flex-col justify-center border-b-4 border-transparent bg-[#222222]/90 p-6 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:border-b-4 hover:border-yellow"
                        >
                          <h3 className="mb-2 text-4xl font-bold text-white sm:text-5xl">
                            25+

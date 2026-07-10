@@ -90,14 +90,14 @@ function Pragraph({ HomePage, AboutUs }) {
        variants={containerVariants}
        initial="hidden"
        whileInView="visible"
-       viewport={{ once: true, amount: 0.4 }}
+       viewport={{ once: false, amount: 0.2 }}
        // 1. Made this a full-width relative container with hidden overflow so the large background doesn't break the layout
        className="relative mx-auto mt-4 mb-10 flex w-full flex-col items-center justify-center overflow-hidden py-12 sm:py-16 lg:py-24"
      >
        {/* 2. THE BACKGROUND IMAGE (FITNESS.png) */}
        <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center">
          <img
-           src="/img/FITNESS.png" // Update this path if your image is in an /img folder!
+           src="/img/FITNESS.png" 
            alt=""
            className="w-[120%] max-w-[1600px] object-contain  sm:w-full "
          />

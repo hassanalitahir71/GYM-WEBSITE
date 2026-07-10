@@ -1,21 +1,13 @@
-
 import { motion } from "framer-motion";
+import { IoCheckboxOutline } from "react-icons/io5";
 
 // 1. MOVED OUTSIDE: This fixes the React error!
 const CheckItem = ({ text }) => (
   <li className="flex items-start gap-4">
-    <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center border-2 border-yellow-400">
-      <svg
-        className="h-4 w-4 text-yellow-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="3"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-      </svg>
+    <div className="mt-1 flex items-center justify-center text-yellow-400">
+      <IoCheckboxOutline className="h-5 w-5" />
     </div>
-    <span className="text-gray-300 sm:text-lg">{text}</span>
+    <span className="sm:text-md text-gray-300">{text}</span>
   </li>
 );
 
@@ -41,17 +33,15 @@ function VisionMissionSection() {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#0a0a0a] py-24">
+    <section className="relative w-full overflow-hidden py-15">
       {/* Optional: Faint background image overlay if needed */}
-      <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/img/your-faint-bg.jpg')] bg-cover bg-center opacity-10"></div>
+      <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/img/vision-bg.jpg')] bg-cover bg-center opacity-40"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
         {/* CENTER DASHED TIMELINE LINE (Hidden on mobile) */}
         <div className="absolute top-0 bottom-0 left-1/2 hidden w-[1px] -translate-x-1/2 border-l border-dashed border-gray-600 md:block"></div>
 
-        {/* =========================================
-            ROW 1: OUR VISION
-        ========================================= */}
+        {/* ROW 1: OUR VISION */}
         <div className="relative mb-24 grid grid-cols-1 items-center gap-12 md:mb-32 md:grid-cols-2 md:gap-24">
           {/* Timeline Diamond */}
           <div className="absolute top-1/2 left-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-yellow-400 shadow-[0_0_15px_rgba(250,204,21,0.6)] md:block"></div>
@@ -62,12 +52,12 @@ function VisionMissionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="flex flex-col pr-0 md:pr-10"
+            className="ml-0 flex w-full flex-col pr-0 md:pr-10 lg:ml-23 lg:w-120"
           >
-            <h2 className="font-made mb-6 text-4xl font-bold text-white sm:text-5xl">
+            <h2 className="font-made mb-6 text-3xl font-semibold text-white sm:text-4xl">
               Our Vision
             </h2>
-            <p className="mb-8 leading-relaxed text-gray-400 sm:text-lg">
+            <p className="sm:text-md mb-8 leading-relaxed text-white">
               At IronForge, our vision is to redefine fitness through
               discipline, strength, and continuous growth, helping individuals
               push limits and unlock their full potential.
@@ -85,36 +75,34 @@ function VisionMissionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="relative mx-auto w-full max-w-md md:max-w-none"
+            className="relative mx-auto mt-10 ml-0 flex w-full max-w-md justify-center md:mt-0 md:max-w-none lg:ml-7 lg:block"
           >
             {/* Striped Background (bingkai foto.png) */}
             <img
-              src="/img/bingkai foto.png"
+              src="/img/bingkai foto (1).png"
               alt=""
-              className="absolute -right-8 -bottom-8 z-0 w-32 opacity-60 sm:-right-12 sm:-bottom-12 sm:w-48"
+              className="absolute -right-2 -bottom-4 z-0 w-48 md:right-10 md:w-60 lg:right-25 lg:bottom-10"
             />
 
             {/* Main Image */}
             <img
-              src="/img/33450f1f6e2aa3a85a6c2ac15eaf252fdb737581.jpg"
+              src="/img/visionPerson.jpg"
               alt="Man exercising"
-              className="relative z-10 w-full object-cover shadow-2xl"
+              className="relative z-10 h-64 w-64 object-cover shadow-2xl md:h-80 md:w-80"
             />
 
             {/* Icon Box (Group 8453.png - Lightbulb) */}
-            <div className="absolute -right-6 -bottom-6 z-20 flex h-20 w-20 items-center justify-center bg-[#2A2A2A] shadow-lg sm:-right-10 sm:-bottom-10 sm:h-24 sm:w-24">
+            <div className="absolute -right-4 -bottom-6 z-20 flex h-16 w-16 items-center justify-center shadow-lg md:right-16 md:h-20 md:w-20 lg:right-41 lg:bottom-26 lg:h-24 lg:w-24">
               <img
-                src="/img/Group 8453.png"
+                src="/img/Bulb.png"
                 alt="Lightbulb Icon"
-                className="h-10 w-10 opacity-70 sm:h-12 sm:w-12"
+                className="h-10 w-10 md:h-15 md:w-15 lg:h-15 lg:w-15"
               />
             </div>
           </motion.div>
         </div>
 
-        {/* =========================================
-            ROW 2: OUR MISSION
-        ========================================= */}
+        {/* ROW 2: OUR MISSION */}
         <div className="relative grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-24">
           {/* Timeline Diamond */}
           <div className="absolute top-1/2 left-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-yellow-400 shadow-[0_0_15px_rgba(250,204,21,0.6)] md:block"></div>
@@ -125,37 +113,29 @@ function VisionMissionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="relative order-2 mx-auto w-full max-w-md md:order-1 md:max-w-none"
+            className="relative order-2 mx-auto mt-10 flex w-full max-w-md justify-center pr-0 md:order-1 md:mt-0 md:max-w-none lg:justify-end lg:pr-10"
           >
-            {/* Striped Background (Shifted to Left Side) */}
+            {/* Striped Background (bingkai foto.png) */}
             <img
-              src="/img/bingkai foto.png"
+              src="/img/bingkai foto (2).png"
               alt=""
-              className="absolute -bottom-8 -left-8 z-0 w-32 opacity-60 sm:-bottom-12 sm:-left-12 sm:w-48"
+              className="absolute -bottom-4 -left-2 z-0 w-48 md:left-4 md:w-60 lg:bottom-10 lg:left-15"
             />
 
-            {/* Main Image (Replace path with your actual trainer image) */}
+            {/* Main Image */}
             <img
-              src="/img/mission-image.jpg"
-              alt="Trainer helping student"
-              className="relative z-10 w-full object-cover shadow-2xl"
+              src="/img/vision-girl.jpg"
+              alt="Girl and Men exercising"
+              className="relative z-10 h-64 w-64 object-cover shadow-2xl md:h-80 md:w-80"
             />
 
-            {/* Icon Box (Flag Icon - Shifted to Left Side) */}
-            <div className="absolute -bottom-6 -left-6 z-20 flex h-20 w-20 items-center justify-center bg-[#2A2A2A] shadow-lg sm:-bottom-10 sm:-left-10 sm:h-24 sm:w-24">
-              <svg
-                className="h-10 w-10 text-gray-400 sm:h-12 sm:w-12"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
-                />
-              </svg>
+            {/* Flag Icon */}
+            <div className="absolute -bottom-6 -left-4 z-20 flex h-16 w-16 items-center justify-center shadow-lg md:left-16 md:h-20 md:w-20 lg:bottom-26 lg:left-32 lg:h-24 lg:w-24">
+              <img
+                src="/img/flag.png"
+                alt="Flag icon"
+                className="h-10 w-10 md:h-15 md:w-15 lg:h-15 lg:w-15"
+              />
             </div>
           </motion.div>
 
@@ -165,12 +145,12 @@ function VisionMissionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="order-1 flex flex-col pl-0 md:order-2 md:pl-10"
+            className="order-1 flex flex-col pr-0 pl-0 md:order-2 md:pl-10 lg:pr-15"
           >
-            <h2 className="font-made mb-6 text-4xl font-bold text-white sm:text-5xl">
+            <h2 className="font-made mb-6 text-3xl font-semibold text-white sm:text-4xl">
               Our Mission
             </h2>
-            <p className="mb-8 leading-relaxed text-gray-400 sm:text-lg">
+            <p className="sm:text-md mb-8 leading-relaxed text-white">
               Our mission is to deliver results-driven programs that transform
               both body and mind, building lasting habits through expert
               coaching and a strong fitness community.
