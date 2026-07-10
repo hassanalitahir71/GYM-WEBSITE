@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -17,30 +18,30 @@ const NavBar = () => {
           <div className="hidden rounded-full bg-gray-100/3 px-8 py-4 backdrop-blur-[12px] md:block">
             <ul className="font-mona flex items-center gap-10">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="hover:text-yellow text-white transition hover:font-semibold"
                 >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/AboutUs"
                   className="hover:text-yellow text-white transition hover:font-semibold"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#"
-                  className="hover:text-yellow text-white transition hover:font-semibold"
+                <Link
+                  to="/OurTeam"
+                  className="hover:text-yellow cursor-pointer text-white transition hover:font-semibold"
                 >
-                  Programs
-                </a>
+                  Our Team
+                </Link>
               </li>
 
               <li>
@@ -55,7 +56,7 @@ const NavBar = () => {
           </div>
 
           {/* Desktop Button */}
-          <button className="font-mona hover:bg-yellow hidden rounded-full bg-black/70 px-6 py-3 text-white transition duration-300 hover:text-black md:block">
+          <button className="font-mona hover:bg-yellow hidden rounded-full bg-black/100 px-6 py-3 text-white transition duration-300 hover:text-black md:block">
             Enroll
           </button>
 
@@ -74,21 +75,22 @@ const NavBar = () => {
         <div className="mx-4 rounded-2xl bg-black/90 p-6 backdrop-blur-md md:hidden">
           <ul className="font-mona flex flex-col items-center gap-6">
             <li>
-              <a href="#" className="text-white" onClick={() => setOpen(false)}>
+              <Link to="/"
+               className="text-white" onClick={() => setOpen(false)}>
                 Home
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="text-white" onClick={() => setOpen(false)}>
+              <Link to="/AboutUs" className="text-white" onClick={() => setOpen(false)}>
                 About Us
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="text-white" onClick={() => setOpen(false)}>
-                Programs
-              </a>
+              <Link to="/OurTeam" className="text-white" onClick={() => setOpen(false)}>
+                Our Team
+              </Link>
             </li>
 
             <li>

@@ -1,12 +1,21 @@
 
 import "./index.css";
-import HeroSection from "./components/HeroSection";
+import AboutUs from "./Pages/AboutUs";
+import HomePage from "./Pages/HomePage";
+
+import { Routes, Route } from "react-router-dom";
+import OurTeam from "./Pages/OurTeam";
+
 
 
 function App() {
   return (
     <>
-     <HeroSection/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/OurTeam" element={<OurTeam/>} />
+      </Routes>
     </>
   );
 }
