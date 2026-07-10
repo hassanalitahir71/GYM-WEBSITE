@@ -183,7 +183,7 @@ const Packages = ({ activePlan = "monthly" }) => {
             </div>
 
             {/* Button */}
-            <button className="mt-auto w-full rounded-full border border-neutral-600 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:border-[#fef041] hover:bg-[#fef041] hover:text-black active:scale-95">
+            <button className="mt-auto w-full rounded-full border border-neutral-600 py-2.5 text-sm font-medium text-white transition-all duration-300  group-hover:border-yellow group-hover:bg-yellow group-hover:text-black hover:bg-white active:scale-95">
               {plan.buttonText}
             </button>
           </div>
