@@ -57,7 +57,7 @@ function HeroSection( {page} ) {
 
                        {/* Arrow Icon */}
                        <div className="group-hover:bg-yellow flex items-center justify-center rounded-full bg-black p-2 transition-all duration-300">
-                         <FiArrowUpRight className="text-sm font-bold text-white transition-all duration-300 group-hover:rotate-90 group-hover:text-black" />
+                         <FiArrowUpRight className="text-sm font-bold text-white transition-all duration-300 group-hover:rotate-45 group-hover:text-black" />
                        </div>
                      </button>
                    </div>
