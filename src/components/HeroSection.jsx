@@ -341,21 +341,21 @@ function HeroSection({ page }) {
               viewport={{ once: true, amount: 0.2 }}
               className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-6 text-center"
             >
-              {/* Graphic & Title Wrapper */}
+              
               <motion.div
                 variants={cardVariants}
                 className="relative flex w-full flex-col items-center justify-center py-10 md:py-20"
               >
-                {/* Text Composition Stack */}
+            
                 <div className="relative z-10 flex w-full flex-col items-center justify-center">
-                  {/* Faded/Shadow "OUR TEAM" Text */}
+                  
                   <img
                     src="/img/Membership (1).png"
                     alt=""
                     className="pointer-events-none absolute top-6 w-[250px] sm:top-8 sm:w-[320px] md:top-12 md:w-[550px]"
                   />
 
-                  {/* Outlined "OUR TEAM" Text (Main Layer) */}
+                  
                   <img
                     src="/img/MemberShip.png"
                     alt="Our Team"
