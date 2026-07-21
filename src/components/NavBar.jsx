@@ -45,12 +45,12 @@ const NavBar = () => {
               </li>
 
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/MemberShip"
                   className="hover:text-yellow text-white transition hover:font-semibold"
                 >
                   Membership
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -75,28 +75,40 @@ const NavBar = () => {
         <div className="mx-4 rounded-2xl bg-black/90 p-6 backdrop-blur-md md:hidden">
           <ul className="font-mona flex flex-col items-center gap-6">
             <li>
-              <Link to="/"
-               className="text-white" onClick={() => setOpen(false)}>
+              <Link
+                to="/"
+                className="text-white"
+                onClick={() => setOpen(false)}
+              >
                 Home
               </Link>
             </li>
 
             <li>
-              <Link to="/AboutUs" className="text-white" onClick={() => setOpen(false)}>
+              <Link
+                to="/AboutUs"
+                className="text-white"
+                onClick={() => setOpen(false)}
+              >
                 About Us
               </Link>
             </li>
 
             <li>
-              <Link to="/OurTeam" className="text-white" onClick={() => setOpen(false)}>
+              <Link
+                to="/OurTeam"
+                className="text-white"
+                onClick={() => setOpen(false)}
+              >
                 Our Team
               </Link>
             </li>
 
             <li>
-              <a href="#" className="text-white" onClick={() => setOpen(false)}>
+              <Link
+                  to="/MemberShip" className="text-white" onClick={() => setOpen(false)}>
                 Membership
-              </a>
+              </Link>
             </li>
 
             <button className="bg-yellow font-mona rounded-full px-6 py-3 text-black">

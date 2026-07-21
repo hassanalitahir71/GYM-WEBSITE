@@ -26,7 +26,7 @@ const OurServices = () => {
           Our Services
         </h2>
         <h1 className="font-made text-[40px] font-extrabold text-black">
-          FITNESS SOLUTION FOR STRON BODY
+          FITNESS SOLUTION FOR STRONG BODY
         </h1>
 
         <div className="flex h-85 w-[91%] mt-5  gap-4">

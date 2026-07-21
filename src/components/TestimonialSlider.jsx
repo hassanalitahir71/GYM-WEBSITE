@@ -65,8 +65,7 @@ export default function TestimonialSlider() {
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden bg-white py-16">
       <div className="relative flex w-full max-w-5xl items-center justify-center px-4">
-        {/* 1. LEFT STATIC GRAY BOX + BUTTON */}
-        {/* Height reduced to 280px */}
+      
         <div className="absolute top-1/2 left-2 z-0 flex h-[280px] w-[40%] -translate-y-1/2 items-center justify-start rounded-2xl bg-[#31313180] px-2 sm:left-4 sm:px-6 md:px-12">
           <button
             onClick={() => sliderRef.current.slickPrev()}
@@ -77,8 +76,7 @@ export default function TestimonialSlider() {
           </button>
         </div>
 
-        {/* 2. RIGHT STATIC GRAY BOX + BUTTON */}
-        {/* Height reduced to 280px */}
+       
         <div className="absolute top-1/2 right-2 z-0 flex h-[280px] w-[40%] -translate-y-1/2 items-center justify-end rounded-2xl bg-[#31313180] px-2 sm:right-4 sm:px-6 md:px-12">
           <button
             onClick={() => sliderRef.current.slickNext()}
@@ -95,12 +93,12 @@ export default function TestimonialSlider() {
           <SliderComponent ref={sliderRef} {...settings}>
             {testimonials.map((item) => (
               <div key={item.id} className="focus:outline-none">
-                {/* Height reduced to 350px, adjusted padding */}
+             
                 <div className="flex h-[350px] flex-col items-center justify-center p-6 sm:p-10">
-                  {/* Reduced bottom margin of quote icon from mb-11 to mb-6 */}
+                  
                   <LuQuote className="text-yellow mb-6 text-3xl sm:text-4xl" />
 
-                  {/* Adjusted text sizing to fit new height better */}
+             
                   <p className="font-made mb-6 text-center text-sm leading-relaxed text-white sm:text-base md:text-lg">
                     {item.quote}
                   </p>
